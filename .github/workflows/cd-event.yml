@@ -38,3 +38,6 @@ jobs:
           no-fail-on-empty-changeset: "1"
           parameter-overrides:
             "Env=${{ github.ref_name }}"
+          
+      - name: Debug AWS Credentials
+        run: echo "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY"
